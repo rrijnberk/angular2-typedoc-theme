@@ -1,0 +1,22 @@
+{{#with comment}}
+    {{#if hasVisibleComponent}}
+        <section class="tsd-comment tsd-typography">
+            {{#if shortText}}
+                <div class="lead">
+                    {{#markdown}}{{{shortText}}}{{/markdown}}
+                </div>
+            {{/if}}
+            {{#if text}}
+                {{#markdown}}{{{text}}}{{/markdown}}
+            {{/if}}
+            {{#if tags}}
+                {{#ng2Comments tags}}
+                <h2>Examples</h2>
+                    {{#each examples}}
+                        {{> example}}
+                    {{/each}}
+                {{/ng2Comments}}
+            {{/if}}
+        </section>
+    {{/if}}
+{{/with}}

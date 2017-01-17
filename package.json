@@ -1,0 +1,8 @@
+{
+  "name": "angular2-typedoc-theme",
+  "version": "1.0.0",
+  "description": "Angular 2 typedoc theme with helpers.",
+  "main": "index.js",
+  "author": "R.Rijnberk",
+  "license": "MIT"
+}
